@@ -6,20 +6,12 @@ import Header from "./Header";
 
 console.log(blogData);
 
-function App({}) {
-  const posts = [
-    {
-      id: 1,
-      title: "First Post",
-      date: "April 29, 2026",
-      preview: "This is my first post"
-    }
-  ]
+function App() {
   return (
-     <div>
-      <Header name="My Blog" />
-      <About about="A blog about React." />
-      <ArticleList posts={posts} />
+    <div>
+      <Header name={blogData.name} />
+      <About about={blogData.about} image={blogData.image} />
+      <ArticleList posts={blogData.posts} />
     </div>
   );
 }
