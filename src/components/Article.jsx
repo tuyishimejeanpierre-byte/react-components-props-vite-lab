@@ -1,6 +1,6 @@
 import React from "react";
 
-function List({title, date = "January 1, 1970", preview}){
+function Article({title, date = "January 1, 1970", preview}){
     return (
        <article>
       <h3>{title}</h3>
@@ -13,4 +13,4 @@ function List({title, date = "January 1, 1970", preview}){
 
 
 
-export default List;
+export default Article;
